@@ -1,0 +1,53 @@
+html {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  position: relative;
+  height: 500px;
+  background-color: black;
+  color: white;
+}
+
+.container-fluid .row {
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+}
+.container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+}
+h2 {
+  margin-top: 30px;
+}
+#title {
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  animation: moveUp 3s;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 670px;
+  }
+}
+
+/**Animation**/
+@keyframes moveUp {
+  0% {
+    bottom: -30px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 10px;
+    opacity: 1;
+  }
+}
